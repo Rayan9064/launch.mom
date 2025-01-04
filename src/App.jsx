@@ -1,11 +1,11 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { AuthProvider } from './components/auth/AuthProvider'
+// import { AuthProvider } from './components/auth/AuthProvider'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Login from './pages/auth/Login'
-import GitHubCallback from './pages/auth/GitHubCallback'
+// import GitHubCallback from './pages/auth/GitHubCallback'
 import CreateSite from './pages/CreateSite'
 import Product from './pages/Product'
 import Checkout from './pages/Checkout'
@@ -14,14 +14,14 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
-    <AuthProvider>
+    // <AuthProvider>
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/auth/github" element={<GitHubCallback />} />
+            {/* <Route path="/auth/github" element={<GitHubCallback />} /> */}
             <Route path="/create" element={<CreateSite />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/checkout" element={<Checkout />} />
@@ -31,7 +31,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </AuthProvider>
+    // </AuthProvider>
   )
 }
 

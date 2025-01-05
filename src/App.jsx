@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Login from './pages/auth/Login'
-// import GitHubCallback from './pages/auth/GitHubCallback'
+import GitHubCallback from './pages/auth/GitHubCallback'
 import CreateSite from './pages/CreateSite'
 import Product from './pages/Product'
 import Checkout from './pages/Checkout'
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            {/* <Route path="/auth/github" element={<GitHubCallback />} /> */}
+            <Route path="/auth/github" element={<GitHubCallback />} />
             <Route path="/create" element={<CreateSite />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/checkout" element={<Checkout />} />

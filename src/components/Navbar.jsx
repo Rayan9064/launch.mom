@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useAuth } from './auth/AuthProvider'
+// import { useAuth } from './auth/AuthProvider'
 import LoginButton from './auth/LoginButton'
 
 export default function Navbar() {
-  const { user } = useAuth()
+  // const { user } = useAuth()
+  const user = false;
 
   return (
     <nav className="bg-white shadow-lg">

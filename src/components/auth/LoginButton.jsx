@@ -7,7 +7,7 @@ function LoginButton({ isGitHubLogin }) {
   const CLIENT_ID = "Ov23li3zEh41OeusUfbi";
   
   const handleGitHubLogin = async () => {
-    window.location.assign('https://github.com/login/oauth/authorize?client_id='+ CLIENT_ID);
+    window.location.assign('https://github.com/login/oauth/authorize?client_id='+ CLIENT_ID + '&scope=repo');
   };
 
   const handleSimpleLogin = async () => {

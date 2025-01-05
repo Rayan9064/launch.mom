@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/login/github" element={<GitHubCallback />} />
+            <Route path="/github" element={<GitHubCallback />} />
             <Route path="/create" element={<CreateSite />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/checkout" element={<Checkout />} />

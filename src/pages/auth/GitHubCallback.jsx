@@ -15,7 +15,7 @@ export default function GitHubCallback() {
       // Step 1: Get access token
       async function getAccessToken() {
         setLoading(true);
-        fetch(`http://localhost:8787/getAccessToken?code=${code}`, {
+        fetch(`https://launch-mom-app.jack-1897.workers.dev/getAccessToken?code=${code}`, {
           method: 'GET',
         })
           .then((response) => response.json())

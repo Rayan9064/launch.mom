@@ -15,22 +15,24 @@ import Contact from './pages/Contact'
 function App() {
   return (
     // <AuthProvider>
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/github" element={<GitHubCallback />} />
-            <Route path="/create" element={<CreateSite />} />
-            <Route path="/product/:id" element={<Product />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/confirmation" element={<OrderConfirmation />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/auth/github" element={<GitHubCallback />} />
+          <Route path="/create" element={<CreateSite />} />
+          <Route path="/product/:id" element={<Product />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/confirmation" element={<OrderConfirmation />} />
+          <Route path="/contact" element={<Contact />} />
+          {/* Catch-all route for unmatched paths */}
+          <Route path="*" element={<div>404 - Page Not Found</div>} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
     // </AuthProvider>
   )
 }

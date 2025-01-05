@@ -5,7 +5,7 @@ const app = new Hono();
 
 // Enable CORS for port 5173
 app.use('*', cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://launch-mom.vercel.app'],
 }));
 
 const CLIENT_ID = 'Ov23li3zEh41OeusUfbi';
